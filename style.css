@@ -4,26 +4,28 @@
 
 /* html is set to 62.5% so that all the REM measurements are based on 10px sizing. So basically 1.5rem = 15px */
 html {
-  font-size: 62.5%;
+  font-size: 82.5%;
 }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #FFFFFF;
+  font-family: "Ubuntu", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #a52e2e;
 }
-
 /**
  * Links
  */
 a {
   font-weight: normal;
   text-decoration: none; 
-  color:#EF6D3D;
+  color:#070707;
 }
 a:focus {
   outline: thin dotted;
+}
+a:hover {
+  color:#EF6D3D
 }
 
 small {
@@ -52,6 +54,11 @@ h4 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h5 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
 
+.responsive-iframe {
+  width: 100%;
+  height: 100vh; /* 或者使用vh单位 */
+  border: none;
+}
 /**
  * Paragraphs
  */
@@ -61,10 +68,54 @@ p {
 p + p {
 
 }
+.container1 {
+  display: flex;
+  flex-direction: row;
+ 
+}
 
+.photo {
+  border-radius: 50%; /* 这将使图片变为圆形 */
+  width: 300px; /* 您可以根据需要调整宽度 */
+  height: 300px; /* 您可以根据需要调整高度 */
+  overflow: hidden; /* 这确保超出圆形的部分被隐藏 */
+}
+
+.headfig {
+    width: 300px ;
+    height: 200px ;
+    object-fit: fill;
+}
+
+.contentfig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: auto;
+  width: auto;
+}
+
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* 子元素竖向排列 */
+  justify-content: center; /* 使内容在容器中垂直居中 */
+  margin-left: 20px; /* 根据需要添加左边距，使文本与图片有一定的间距 */
+}
 /**
  * Quotes & Blockquotes
  */
+ .email-container {
+  display: flex;
+  align-items: center; /* 使图标和文本垂直居中对齐 */
+}
+
+.email-container i {
+  margin-right: 10px; /* 设置图标和文本之间的间距 */
+}
+
+
 q {
   quotes: '\00201C' '\00201D';
 }
@@ -97,13 +148,14 @@ html {
   background-size:cover;
 }
 body {
-  max-width:800px;
+  width:80%;
+  max-width:10000px;
   margin:25px auto;
 }
 header, #content, footer { 
-  background: rgba(0,0,0,.8); 
+  background: rgba(255, 255, 255, 0.8); 
   padding:25px;
-  color:#FFFFFF; 
+  color:#000000; 
 }
 
 /* Menu Links */
@@ -122,10 +174,10 @@ ul.main-menu li a {
   color:#cfd2da;
 }
 ul.main-menu li a:hover {
-  color:#FFFFFF;
+  color:#a34e4e;
 }
 ul.main-menu li a.active {
-  color:#FFFFFF;
+  color:#a34e4e;
   border-bottom-color:#EF6D3D;
 }
 
@@ -136,6 +188,4 @@ ul.main-menu li a.active {
 .show {
   display:block;
 }
-
-
-
+ 
