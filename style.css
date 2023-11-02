@@ -58,6 +58,7 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
   width: 100%;
   height: 100vh; /* 或者使用vh单位 */
   border: none;
+  /* zoom : 100%; */
 }
 /**
  * Paragraphs
