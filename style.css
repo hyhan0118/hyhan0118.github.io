@@ -25,7 +25,7 @@ a:focus {
   outline: thin dotted;
 }
 a:hover {
-  color:#EF6D3D
+  
 }
 
 small {
@@ -74,7 +74,10 @@ p + p {
   flex-direction: row;
  
 }
-
+.container_education{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .photo {
   border-radius: 50%; /* 这将使图片变为圆形 */
   width: 300px; /* 您可以根据需要调整宽度 */
@@ -125,6 +128,13 @@ q:before {
 }
 q:after {
   content: close-quote;
+}
+.content-link{
+  text-decoration: none; 
+  color: rgba(38, 116, 232, 0.694)
+}
+.content-link:hover{
+  text-decoration: underline; 
 }
 
 blockquote {
@@ -182,6 +192,49 @@ ul.main-menu li a.active {
   border-bottom-color:#EF6D3D;
 }
 
+/*ul*/
+ul.latex-like {
+  list-style: none; /* 去除默认的列表样式 */
+  padding-left: 0; /* 去除默认的内边距 */
+}
+
+ul.latex-like li::before {
+  content: "\2022";  /* 使用Unicode编码的黑色小圆点 */
+  color: black; /* 可以调整颜色 */
+  font-weight: bold; /* 如果需要的话可以使其加粗 */
+  display: inline-block; 
+  width: 1em; /* 确保有足够的空间放置圆点 */
+  margin-left: 2em; /* 向左移动，确保圆点不占用内容空间 */
+}
+
+ul.latex-like li {
+  margin-bottom: 0.5em; /* 调整列表项之间的空间 */
+}
+
+ul.edu {
+  list-style: none; /* 去除默认的列表样式 */
+  padding-left: 0; /* 去除默认的内边距 */
+}
+
+ul.edu li::before {
+  font-family: "Font Awesome 6 Free"; /* 确保使用的是正确的字体名称 */
+  content: '\f19d';  /* Font Awesome中学士帽的Unicode字符 */
+  padding-right: 10px; /* 在图标和文本之间增加一些空间 */
+}
+
+ul.edu li {
+  margin-bottom: 0.5em; /* 调整列表项之间的空间 */
+}
+
+.github-container {
+  margin-left: 20px; /* 整个容器向右移动20px */
+}
+.university {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 20px; /* 给学校名称增加左边距，以此来缩进 */
+  font-weight: 20;
+  font-size: 16px; 
+}
 /* Utility classes */
 .hide {
   display:none;

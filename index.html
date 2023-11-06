@@ -13,6 +13,7 @@
     <!-- Reset default styles and add support for google fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Custom styles -->
@@ -42,7 +43,7 @@
         <img src="myself3.jpg"  alt="Description" class="photo">
         <div class="text-container">
           <div><h1>Haoyu Han</h1></div>
-          <div class="email-container">
+          <div class="github-container">
             <i class="fas fa-envelope"></i> <!-- 这是email图标 -->
             <span>email：hyhan@seas.harvard.edu</span>
           </div>
@@ -69,7 +70,8 @@
       <ul class="main-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#Research-Experience">Research Experience</a></li>
-        <li><a href="#Project">Project</a></li>
+        <li><a href="#Research-Statement">Research Statement</a></li>
+        <!-- <li><a href="#Project">Project</a></li> -->
       </ul>                 
     </header>
    
@@ -170,13 +172,33 @@
             </figure>
           </div>
             <div id="home" class="content-region hide">
-            I am Haoyu Han, an undergraduate at the <strong>School of the Gifted Young</strong> in <strong>University of Science and Technology of China(USTC)</strong>. I am currently a visiting intern in Computational Robotics Lab at the School of Engineering and Applied Sciences (SEAS), <strong>Harvard University</strong>, advised by Professor <strong>Heng Yang</strong>. Back in USTC I joined the Graphics&Geometric Computing Laboratory, advised by Professor <strong>Ligang Liu</strong>. I majored in <strong>Computational Mathematics</strong> , also known as Information and Computational Science. I am now interested in <strong>control and physical simulation</strong>. My previous experiences are about visualization and numerical computation, and I am eager to delve deeper into these topics. I have developed skills in ODE/PDE, Numerical Analysis, Control Theory, and Simulation.
+            I am Haoyu Han, an undergraduate at <a href="https://sgy.ustc.edu.cn/" class ="content-link" target="_blank">the School of the Gifted Young</a> in <a href="https://www.ustc.edu.cn/" class ="content-link" target="_blank">University of Science and Technology of China(USTC)</a>. I am currently a visiting intern in Computational Robotics Lab at <a href="https://seas.harvard.edu/" class ="content-link" target="_blank">the School of Engineering and Applied Sciences (SEAS)</a>, Harvard University, advised by <a href="https://hankyang.seas.harvard.edu/" class ="content-link" target="_blank">Professor Heng Yang</a>. Back in USTC I joined <a href="http://gcl.ustc.edu.cn/" class ="content-link" target="_blank">the Graphics&Geometric Computing Laboratory</a>, advised by <a href="http://staff.ustc.edu.cn/~lgliu/" class ="content-link" target="_blank">Professor Ligang Liu</a>. I majored in <strong>Computational Mathematics</strong> , also known as Information and Computational Science. I am now interested in <strong>control and physical simulation</strong>. My previous experiences are about visualization and numerical computation, and I am eager to delve deeper into these topics. I have developed skills in ODE/PDE, Numerical Analysis, Control Theory, and Simulation.
             <br>
             <br>
-            As for math courses, I have taken Mathematical Analysis(A+), Data Structures and Database(A+), Differential Equations(A+), Linear Algebra, Numerical analysis(A+), Numerical algebra(A+), Finite Element Method etc. I also took some computer courses like Computer Graphics(A+), Deep Learning etc.
+            <div class="container_education">
+              <div >
+                <h3><strong>Interests</strong></h3>
+                <ul class="latex-like">
+                  <li>Robotics</li>
+                  <li>Physical simulation</li>
+                  <li>Applied math</li>
+                </ul>
+              </div>
+              <div>
+                <h3><strong>Education</strong></h3>
+                <div class="github-container">
+                  <i class="fas fa-graduation-cap"></i> <!-- 学位图标 -->
+                  <span>BS in computational math,     2020-Present</span>
+                </div>
+                <div class="university">University of Science and Technology of China, Hefei, China</div>
+              </div>
+            </div>
             <br>
             <br>
-            My research experience began in Computer Graphics (CG). I joined Graphics & Geometric Computing Laboratory (GCL) in USTC and first took online courses in CG. I honed my coding skills and became familiar with the classic topics in computer graphics. Subsequently, I conducted a survey on cloth simulation and implemented some classical methods. During this time I explored some ideas such as implementing unbalanced spring stiffness constants and applying wavelet analysis to cloth simulation. Following this, <strong>I delved into Differential Simulation and commenced a project on <a href="#Shadowart">cloth shadow art</a>.</strong>
+            <!-- As for courses, I have taken Mathematical Analysis(A+), Data Structures and Database(A+), Differential Equations(A+), Linear Algebra, Numerical analysis(A+), Numerical algebra(A+), Finite Element Method, Computer Graphics(A+), Deep Learning etc.
+            <br>
+            <br> -->
+            <!-- My research experience began in Computer Graphics (CG). I joined Graphics & Geometric Computing Laboratory (GCL) in USTC and first took online courses in CG. I honed my coding skills and became familiar with the classic topics in computer graphics. Subsequently, I conducted a survey on cloth simulation and implemented some classical methods. During this time I explored some ideas such as implementing unbalanced spring stiffness constants and applying wavelet analysis to cloth simulation. Following this, <strong>I delved into Differential Simulation and commenced a project on <a href="#Shadowart">cloth shadow art</a>.</strong>
             <br>
             <br>
             When researching differential simulation, I gradually developed an interest in the topic of simulation in robotics and wanted to learn more about the field. This led me to start a summer internship at Harvard University, advised by Professor Heng Yang. During the internship, I first worked on <strong>observer</strong> to become familiar with some classical setting and techniques in robotics. I studied a book about observer and tried to apply it on various systems. This method is successful when applied to pendulum, cart-pole and arcbot, but not directly on quadrator. To deal with it, I introduced a new variable to transform it into high-gain form. Additionally I proofed <strong>a tighter bound</strong> of it.
@@ -185,7 +207,7 @@
             <strong>Then I delved into optimal control problems with a continuous-time, infinite-horizon setting, starting from a pendulum example. </strong>It seems quite simple, right? But even for the pendulum, we found that it has some interesting properties. The value function at the lowest point must be non-smooth, because if the gradient exists, there would be a unique optimal control policy; however, in reality, the pendulum can swing either left or right. Furthermore, we drew and proved that there is <strong>a non-smooth spiral line</strong> in the value function. We then applied this to the control-constrained case and it proved to be much more interesting; some parts of the line appeared to be discontinuous! I conducted some analysis and provided a physical interpretation. Ultimately, we compared our methods with others and used the insights to guide neural network training. This experience gave me profound insights into how to explore a difficult problem, from reviewing related work to implementing and analyzing the topic, and finally finding a direction for further investigation.
             <br>
             <br>
-            My future plan is to develop theories that will guide computers and robotics in understanding and interacting with the real world through computational methods. 
+            My future plan is to develop theories that will guide computers and robotics in understanding and interacting with the real world through computational methods.  -->
           </div>
           
           <div id="Research-Experience" class="content-region hide">
@@ -224,6 +246,21 @@
           <div id="Project" class="content-region hide">
             <p>
               See my github repository.
+            </p>
+          </div>
+
+          <div id="Research-Statement" class="content-region hide">
+            <p>
+              My research experience began in Computer Graphics (CG). I joined Graphics & Geometric Computing Laboratory (GCL) in USTC and first took online courses in CG. I honed my coding skills and became familiar with the classic topics in computer graphics. Subsequently, I conducted a survey on cloth simulation and implemented some classical methods. During this time I explored some ideas such as implementing unbalanced spring stiffness constants and applying wavelet analysis to cloth simulation. Following this, <strong>I delved into Differential Simulation and commenced a project on <a href="#Shadowart">cloth shadow art</a>.</strong>
+              <br>
+              <br>
+              When researching differential simulation, I gradually developed an interest in the topic of simulation in robotics and wanted to learn more about the field. This led me to start a summer internship at Harvard University, advised by Professor Heng Yang. During the internship, I first worked on <strong>observer</strong> to become familiar with some classical setting and techniques in robotics. I studied a book about observer and tried to apply it on various systems. This method is successful when applied to pendulum, cart-pole and arcbot, but not directly on quadrator. To deal with it, I introduced a new variable to transform it into high-gain form. Additionally I proofed <strong>a tighter bound</strong> of it.
+              <br>
+              <br>
+              <strong>Then I delved into optimal control problems with a continuous-time, infinite-horizon setting, starting from a pendulum example. </strong>It seems quite simple, right? But even for the pendulum, we found that it has some interesting properties. The value function at the lowest point must be non-smooth, because if the gradient exists, there would be a unique optimal control policy; however, in reality, the pendulum can swing either left or right. Furthermore, we drew and proved that there is <strong>a non-smooth spiral line</strong> in the value function. We then applied this to the control-constrained case and it proved to be much more interesting; some parts of the line appeared to be discontinuous! I conducted some analysis and provided a physical interpretation. Ultimately, we compared our methods with others and used the insights to guide neural network training. This experience gave me profound insights into how to explore a difficult problem, from reviewing related work to implementing and analyzing the topic, and finally finding a direction for further investigation.
+              <br>
+              <br>
+              My future plan is to develop theories that will guide computers and robotics in understanding and interacting with the real world through computational methods. 
             </p>
           </div>
           
