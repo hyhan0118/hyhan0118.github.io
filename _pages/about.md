@@ -1,17 +1,14 @@
 ---
 layout: about
 title: about
+subtitle: PhD Student, Applied Mathematics
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  align: left
+  image: myself3.jpg
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -21,14 +18,27 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+education:
+  - icon: "fa-solid fa-graduation-cap"
+    title: "PhD in Applied Mathematics, 2024 - present"
+    subtitle: "Harvard University"
+
+  - icon: "fa-solid fa-graduation-cap"
+    title: "BS in Information and Computational Science, 2020 - 2024"
+    subtitle: "University of Science and Technology of China"
+
+interests:
+  - title: "Robotics"
+    subtitle: "Perception, Reinforcement Learning, Control"
+  - title: "Optimization"
+    subtitle: "Convex optimization, Semi-definite Programming"
+
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a second year Applied Mathmetics Ph.D student at [School of Engineering and Applied Sciences](https://seas.harvard.edu) (SEAS) in [Harvard University](https://www.harvard.edu), where I am fortunate to work with Prof. [Heng Yang](https://hankyang.seas.harvard.edu). Before that, I got bachelor’s degree in Information and Computational Science at [University of Science and Technology of China](https://en.ustc.edu.cn) (USTC). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My current research interests lies in reinforcement learning (RL) and robot perception. Both of the core of them is optimization -- whether Semi-definite Programming for structure from motion problem or policy gradient method for RL. I aimed to study the optimization landscape for various problem and analyze numerical phenomenon through an optimization perspective.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+{% include about/education-interests.liquid %}
+
+
