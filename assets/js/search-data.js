@@ -113,7 +113,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/CV_Haoyu_HAN_old.pdf", "_blank");
+          window.open("/assets/pdf/CV_Haoyu_HAN.pdf", "_blank");
         },
       },{
         id: 'social-email',
