@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
           title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -45,8 +38,20 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "news-best-system-paper-award-robotics-science-and-systems",
-          title: 'Best System Paper Award, Robotics: Science and Systems',
+      },{id: "news-our-paper-on-the-surprising-robustness-of-sequential-convex-optimization-for-contact-implicit-motion-planning-got-accepted-to-robotics-science-and-systems-rss-2025",
+          title: 'Our paper On the Surprising Robustness of Sequential Convex Optimization for Contact-Implicit Motion...',
+          description: "",
+          section: "News",},{id: "news-our-paper-building-rome-with-convex-optimization-got-accepted-to-robotics-science-and-systems-rss-2025",
+          title: 'Our paper Building Rome with Convex Optimization got accepted to Robotics: Science and...',
+          description: "",
+          section: "News",},{id: "news-i-got-the-best-system-paper-award-in-robotics-science-and-systems",
+          title: 'I got the Best System Paper Award in Robotics: Science and Systems!',
+          description: "",
+          section: "News",},{id: "news-harvard-news-building-3d-scenes-from-2d-images-in-an-instant",
+          title: 'Harvard News: Building 3D Scenes From 2D Images in an Instant.',
+          description: "",
+          section: "News",},{id: "news-our-paper-sparse-variable-projection-in-robotic-perception-exploiting-separable-structure-for-efficient-nonlinear-optimizationg-got-accepted-to-international-conference-on-robotics-amp-amp-automation-icra-2026",
+          title: 'Our paper Sparse Variable Projection in Robotic Perception: Exploiting Separable Structure for Efficient...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
