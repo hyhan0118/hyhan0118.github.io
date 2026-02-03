@@ -54,7 +54,7 @@ external_services:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -209,7 +209,7 @@ exclude:
   - _pages/about_einstein.md
   - _pages/cv.md
   # - _pages/publications.md
-  # - _pages/projects.md
+  - _pages/projects.md
   - _pages/teaching.md
   - _pages/repositories.md
   - _pages/profiles.md

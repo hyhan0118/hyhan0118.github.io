@@ -10,6 +10,14 @@
   - firstname: ["Nathan", "N."]
     url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
+"yang":
+  - firstname: ["Heng", "H."]
+    url: https://hankyang.seas.harvard.edu
+
+"han":
+  - firstname: ["Haoyu", "H."]
+    url: https://hyhan0118.github.io
+
 "bach":
   - firstname: ["Johann Sebastian", "J. S."]
     url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
