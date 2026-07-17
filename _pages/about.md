@@ -28,16 +28,16 @@ education:
     subtitle: "University of Science and Technology of China"
 
 interests:
-  - title: "Robotics"
-    subtitle: "Perception, Reinforcement Learning, Control"
+  - title: "Machine Learning"
+    subtitle: "Reconstruction, Reinforcement Learning, Control"
   - title: "Optimization"
-    subtitle: "Convex optimization, Semi-definite Programming"
+    subtitle: "Convex optimization, Semi-definite Programming, Gradient Descent"
 
 ---
 
 I am a second year Applied Mathmetics Ph.D student at [School of Engineering and Applied Sciences](https://seas.harvard.edu) (SEAS) in [Harvard University](https://www.harvard.edu), where I am fortunate to work with Prof. [Heng Yang](https://hankyang.seas.harvard.edu). Before that, I got bachelor’s degree in Information and Computational Science at [University of Science and Technology of China](https://en.ustc.edu.cn) (USTC). 
 
-My current research interests lies in reinforcement learning (RL) and robot perception. Both of the core of them is optimization -- whether Semi-definite Programming for structure from motion problem or policy gradient method for RL. I aimed to study the optimization landscape for various problem and analyze numerical phenomenon through an optimization perspective.
+My current research interests lies in optimization and machine learning theory. Both of the core of them is optimization -- whether Semi-definite Programming for structure from motion problem or policy gradient method for RL. I aimed to study the optimization landscape for various problem and analyze numerical phenomenon through an optimization perspective.
 
 {% include about/education-interests.liquid %}
 
